@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gmail</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/4aeacb7a4b.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="toast show">
+        <div class="toast-header">
+          Enable desktop notifications for Gmail. <button type="button" class="btn btn-primary">Ok</button>
+          <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+        </div>
+      </div>
+    <!-- nav-bar -->
+    <div class="nav">
+        <div class="logo">
+            <div data-bs-toggle="tooltip" title="Main menu" class="menu"><i class="fa-solid fa-bars"></i></div>
+            <div class="logoimg" title="Gmail"></div>
+        </div>
+        <div class="search">
+            <div class="search-bar">
+                <div class="search-icon" data-bs-toggle="tooltip" title="search"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <input type="text" placeholder="Search mail">
+                <div class="search-icon" data-bs-toggle="tooltip" title="show search options"><i class="fa-solid fa-sliders" type="button"  data-bs-toggle="modal" data-bs-target="#myModal" >
+                    <!-- The Modal -->
+                    <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                  
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                          <h4 class="modal-title"><i class="fa-solid fa-magnifying-glass"></i> Search mail</h4>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                  
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <form action="/action_page.php">
+                                <div class="mb-3 mt-3">
+                                  <label for="email" class="form-label">From:</label>
+                                  <input type="email" class="form-control" id="email" placeholder="type here"  name="email">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="email" class="form-label">To</label>
+                                  <input type="email" class="form-control" id="email"  placeholder="type here" name="email">
+                                </div>       
+                                <div class="mb-3 mt-3">
+                                    <label for="text" class="form-label">Includes the words:</label>
+                                    <input type="text" class="form-control" id="text" placeholder="type here"  name="email">
+                                  </div>    
+                                  <div class="mb-3 mt-3">
+                                    <label for="text" class="form-label">Date within:</label>
+                                    <input type="date" class="form-control"  name="date">
+                                  </div>  
+                                
+                              </form>
+                        </div>
+                  
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Search</button>
+                        </div>
+                  
+                      </div>
+                    </div>
+                  </div></i></div>
+            </div>
+        </div>
+        <div class="options">
+            <div class="options-icon dropdown" data-bs-toggle="tooltip" title="support" ><i class="fa-regular fa-circle-question dropdown" data-bs-toggle="dropdown"></i><ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Help</a></li>
+                <li><a class="dropdown-item" href="#">Training</a></li>
+                <li><a class="dropdown-item" href="#">Updates</a></li><hr>
+                <li><a class="dropdown-item" href="#">Send feedback to Google</a></li>
+              </ul></div>
+            <div class="options-icon" data-bs-toggle="tooltip" title="settings" ><i class="fa-solid fa-gear"></i></div>
+            <div class="options-icon dropdown" data-bs-toggle="tooltip" title="Google Apps" >
+                <i class="fa-solid fa-grip dropdown" data-bs-toggle="dropdown"></i> 
+                <div class="dropdown-menu b">
+                    <div class="dropdown-apps"><img src="./icons/icons8-google-48.png" alt=""> <p>Google</p></div>
+                    <div class="dropdown-apps"><img src="./icons/icons8-youtube-48.png" alt=""><p>Youtube</p></div>
+                    <div class="dropdown-apps"><img src="./icons/icons8-google-play-48.png" alt=""> <p>Play</p></div>
+                    <div class="dropdown-apps"><img src="./icons/icons8-gmail-48.png" alt=""> <p>Gmail</p></div>
+                    <div class="dropdown-apps"><img src="./icons/icons8-google-meet-48.png" alt=""> <p>Meet</p></div>
+                    <div class="dropdown-apps"><img src="./icons/icons8-chat-48.png" alt=""> <p>Chat</p></div>
+                    <div class="dropdown-apps"><img src="./icons/icons8-google-calendar-48.png" alt=""> <p>Calender</p></div>
+                    <div class="dropdown-apps"><img src="./icons/icons8-google-drive-48.png" alt=""> <p>Drive</p></div>
+                    <div class="dropdown-apps"><img src="./icons/icons8-google-contacts-48.png" alt=""> <p>Contact</p></div>
+                    <div class="dropdown-apps"><img src="./icons/icons8-google-photos-48.png" alt=""> <p>Photos</p></div>
+                    <div class="dropdown-apps"><img src="./icons/icons8-google-translate-48.png" alt=""> <p>Translate</p></div>
+                    <div class="dropdown-apps"><img src="./icons/icons8-google-duo-48.png" alt=""> <p>Duo</p></div> 
+                    <hr>
+                    <div class="dropdown-apps"><img src="./icons/icons8-google-shopping-48.png" alt=""> <p>Shopping</p></div>
+                    <div class="dropdown-apps"><img src="./icons/icons8-google-classroom-48.png" alt=""> <p>Classroom</p></div>
+                    <div class="dropdown-apps"><img src="./icons/icons8-google-podcasts-48.png" alt=""> <p>Podcast</p></div>
+                    <div class="dropdown-apps"><img src="./icons/icons8-google-docs-48.png" alt=""> <p>Docs</p></div>
+                    <div class="dropdown-apps"><img src="./icons/icons8-google-slides-48.png" alt=""> <p>Slides</p></div>
+                    <div class="dropdown-apps"><img src="./icons/icons8-book-48.png" alt=""> <p>Books</p></div> 
+                    <div class="dropdown-apps"><img src="./icons/icons8-google-keep-48.png" alt=""> <p>Keep</p></div>
+                    <div class="dropdown-apps"><img src="./icons/icons8-google-ads-48.png" alt=""> <p>Google Ads</p></div>
+                    <div class="dropdown-apps"><img src="./icons/icons8-google-earth-48.png" alt=""> <p>Earth</p></div>                                    
+                </div>
+            </div>
+            <div class="user-img" data-bs-toggle="tooltip" title="Google account"></div>
+    </div>
+    </div>
+    <!-- body content -->
+    <div class="body">
+
+    <!-- leftside -->
+    <div class="leftside">
+        <div class="l1">
+            <div class="compose"><img height="30px" src="https://www.gstatic.com/images/icons/material/colored_icons/2x/create_32dp.png" alt=""><span>Compose</span></div>
+            <div class="select"><i class="fa-solid fa-inbox"></i><span class="s-text">Inbox</span><span class="s-nbr">253</span></div>
+            <div class="select"><i class="fa-solid fa-star"></i><span class="s-text">Starred</span></div>
+            <div class="select"><i class="fa-solid fa-clock"></i><span class="s-text">Snoozed</span></div>
+            <div class="select"><i class="fa-solid fa-paper-plane"></i><span class="s-text">Sent</span></div>
+            <div class="select"><i class="fa-solid fa-file"></i><span class="s-text">Drafts</span><span class="s-nbr">15</span></div>
+            <div class="select"><i class="fa-solid fa-angle-down"></i><span class="s-text">More</span></div>
+        </div>
+        <div class="l2">
+            <h6>Meet</h6>
+            <div class="select"><i class="fa-solid fa-video"></i><span class="s-text">New meeting</span></div>
+            <div class="select"><i class="fa-solid fa-keyboard"></i><span class="s-text">Join a meeting</span></div>
+        </div>
+        <div class="l2">
+            <h6>Hangouts</h6>
+            <div class="acc2"><div class="user-img" data-bs-toggle="tooltip" title="Google account"></div><span>Asharib</span></div>
+            
+        </div>
+    </div>
+
+    <!-- mid -->
+    <div class="mid">
+        <div class="mid-nav">
+            <div class="select-box">
+                <div class="check" data-bs-toggle="tooltip" title="select"><input type="checkbox"></div>
+                <div class="view-options" data-bs-toggle="tooltip" title="select"><button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"></button><ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">All</a></li>
+                    <li><a class="dropdown-item" href="#">None</a></li>
+                    <li><a class="dropdown-item" href="#">Read</a></li>
+                    <li><a class="dropdown-item" href="#">Unread</a></li>
+                    <li><a class="dropdown-item" href="#">Starred</a></li>
+                    <li><a class="dropdown-item" href="#">Unstarred</a></li>
+                  </ul></div>
+            </div>
+            <div class="mid-nav-opt" data-bs-toggle="tooltip" title="refresh" ><i class="fa-solid fa-arrow-rotate-right"></i></div>
+            <div class="mid-nav-opt dropdown" data-bs-toggle="tooltip" title="more" ><i class="fa-solid fa-ellipsis-vertical" data-bs-toggle="dropdown"></i><ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Mark all as read</a></li><hr>
+                <li><a class="dropdown-item" href="#"><i>Select messages to see more actions</i></a></li>
+              </ul>
+            </div>
+            <div class="other-box">
+                <div class="nbr-of-mail">1-50 of 325</div>
+                <div class="nxt"><i class="fa-solid fa-angle-left"></i></div>
+                <div class="nxt"><i class="fa-solid fa-angle-right"></i></div>
+            </div>
+        </div>
+        <div class="mail-container">
+            <div class="mail-sections">
+                <div class="section primary"><i class="fa-solid fa-inbox"></i><span>Primary</span></div>
+                <div class="section social"><i class="fa-solid fa-user-group"></i><span>Social</span></div>
+                <div class="section promotion"><i class="fa-solid fa-tag"></i><span>Promotions</span></div>
+            </div>
+            <div class="all-mails">
+                <div class="mail"><input type="checkbox"><div class="mail-star" data-bs-toggle="tooltip" title="not starred" ><i class="fa-regular fa-star"></i></div><span class="bold">Networking Academy</span><span class="b-text">Cousre Enrollment Notification</span><span class="normal-text">-Dear Asharib Ali, Welcome! You are now enrolled in ..</span><span class="time">16 Apr</span></div>
+            <div class="mail"><input type="checkbox"><div class="mail-star" data-bs-toggle="tooltip" title="not starred" ><i class="fa-regular fa-star"></i></div><span class="bold">Networking Academy</span><span class="b-text">Cousre Enrollment Notification</span><span class="normal-text">-Dear Asharib Ali, Welcome! You are now enrolled in ..</span><span class="time">16 Apr</span></div>
+            <div class="mail"><input type="checkbox"><div class="mail-star" data-bs-toggle="tooltip" title="not starred" ><i class="fa-regular fa-star"></i></div><span class="bold">Networking Academy</span><span class="b-text">Cousre Enrollment Notification</span><span class="normal-text">-Dear Asharib Ali, Welcome! You are now enrolled in ..</span><span class="time">16 Apr</span></div>
+            <div class="mail"><input type="checkbox"><div class="mail-star" data-bs-toggle="tooltip" title="not starred" ><i class="fa-regular fa-star"></i></div><span class="bold">Networking Academy</span><span class="b-text">Cousre Enrollment Notification</span><span class="normal-text">-Dear Asharib Ali, Welcome! You are now enrolled in ..</span><span class="time ">16 Apr</span></div>
+            <div class="mail"><input type="checkbox"><div class="mail-star" data-bs-toggle="tooltip" title="not starred" ><i class="fa-regular fa-star"></i></div><span class="bold">Networking Academy</span><span class="b-text">Cousre Enrollment Notification</span><span class="normal-text">-Dear Asharib Ali, Welcome! You are now enrolled in ..</span><span class="time">16 Apr</span></div>
+            <div class="mail"><input type="checkbox"><div class="mail-star" data-bs-toggle="tooltip" title="not starred" ><i class="fa-regular fa-star"></i></div><span class="bold">Networking Academy</span><span class="b-text">Cousre Enrollment Notification</span><span class="normal-text">-Dear Asharib Ali, Welcome! You are now enrolled in ..</span><span class="time">16 Apr</span></div>
+            <div class="mail"><input type="checkbox"><div class="mail-star" data-bs-toggle="tooltip" title="not starred" ><i class="fa-regular fa-star"></i></div><span class="bold">Networking Academy</span><span class="b-text">Cousre Enrollment Notification</span><span class="normal-text">-Dear Asharib Ali, Welcome! You are now enrolled in ..</span><span class="time">16 Apr</span></div>
+            <div class="mail"><input type="checkbox"><div class="mail-star" data-bs-toggle="tooltip" title="not starred" ><i class="fa-regular fa-star"></i></div><span class="bold">Networking Academy</span><span class="b-text">Cousre Enrollment Notification</span><span class="normal-text">-Dear Asharib Ali, Welcome! You are now enrolled in ..</span><span class="time">16 Apr</span></div>
+            <div class="mail"><input type="checkbox"><div class="mail-star" data-bs-toggle="tooltip" title="not starred" ><i class="fa-regular fa-star"></i></div><span class="bold">Networking Academy</span><span class="b-text">Cousre Enrollment Notification</span><span class="normal-text">-Dear Asharib Ali, Welcome! You are now enrolled in ..</span><span class="time">16 Apr</span></div>
+            <div class="mail"><input type="checkbox"><div class="mail-star" data-bs-toggle="tooltip" title="not starred" ><i class="fa-regular fa-star"></i></div><span class="bold">Networking Academy</span><span class="b-text">Cousre Enrollment Notification</span><span class="normal-text">-Dear Asharib Ali, Welcome! You are now enrolled in ..</span><span class="time">16 Apr</span></div>
+            <div class="mail"><input type="checkbox"><div class="mail-star" data-bs-toggle="tooltip" title="not starred" ><i class="fa-regular fa-star"></i></div><span class="bold">Networking Academy</span><span class="b-text">Cousre Enrollment Notification</span><span class="normal-text">-Dear Asharib Ali, Welcome! You are now enrolled in ..</span><span class="time">16 Apr</span></div>
+            <div class="mail"><input type="checkbox"><div class="mail-star" data-bs-toggle="tooltip" title="not starred" ><i class="fa-regular fa-star"></i></div><span class="bold">Networking Academy</span><span class="b-text">Cousre Enrollment Notification</span><span class="normal-text">-Dear Asharib Ali, Welcome! You are now enrolled in ..</span><span class="time">16 Apr</span></div>
+            <div class="mail"><input type="checkbox"><div class="mail-star" data-bs-toggle="tooltip" title="not starred" ><i class="fa-regular fa-star"></i></div><span class="bold">Networking Academy</span><span class="b-text">Cousre Enrollment Notification</span><span class="normal-text">-Dear Asharib Ali, Welcome! You are now enrolled in ..</span><span class="time">16 Apr</span></div>
+            <div class="mail"><input type="checkbox"><div class="mail-star" data-bs-toggle="tooltip" title="not starred" ><i class="fa-regular fa-star"></i></div><span class="bold">Networking Academy</span><span class="b-text">Cousre Enrollment Notification</span><span class="normal-text">-Dear Asharib Ali, Welcome! You are now enrolled in ..</span><span class="time">16 Apr</span></div>
+            <div class="mail"><input type="checkbox"><div class="mail-star" data-bs-toggle="tooltip" title="not starred" ><i class="fa-regular fa-star"></i></div><span class="bold">Networking Academy</span><span class="b-text">Cousre Enrollment Notification</span><span class="normal-text">-Dear Asharib Ali, Welcome! You are now enrolled in ..</span><span class="time">16 Apr</span></div>
+            <div class="mail"><input type="checkbox"><div class="mail-star" data-bs-toggle="tooltip" title="not starred" ><i class="fa-regular fa-star"></i></div><span class="bold">Networking Academy</span><span class="b-text">Cousre Enrollment Notification</span><span class="normal-text">-Dear Asharib Ali, Welcome! You are now enrolled in ..</span><span class="time">16 Apr</span></div>
+            <div class="mail"><input type="checkbox"><div class="mail-star" data-bs-toggle="tooltip" title="not starred" ><i class="fa-regular fa-star"></i></div><span class="bold">Networking Academy</span><span class="b-text">Cousre Enrollment Notification</span><span class="normal-text">-Dear Asharib Ali, Welcome! You are now enrolled in ..</span><span class="time">16 Apr</span></div>
+            <div class="mail"><input type="checkbox"><div class="mail-star" data-bs-toggle="tooltip" title="not starred" ><i class="fa-regular fa-star"></i></div><span class="bold">Networking Academy</span><span class="b-text">Cousre Enrollment Notification</span><span class="normal-text">-Dear Asharib Ali, Welcome! You are now enrolled in ..</span><span class="time">16 Apr</span></div>
+            </div>
+            
+           
+            
+        </div>
+    </div>
+
+    <!-- rightside -->
+    <div class="rightside">
+        <div class="rightside-options calender" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Calender"></div>
+        <div class="rightside-options keepnotes" ata-bs-toggle="tooltip" data-bs-placement="bottom" title="Keep"></div>
+        <div class="rightside-options tasks" ata-bs-toggle="tooltip" data-bs-placement="bottom" title="Tasks"><i class="fa-regular fa-circle-check"></i></div>
+        <div class="rightside-options contact" ata-bs-toggle="tooltip" data-bs-placement="bottom" title="Contact"><i class="fa-solid fa-circle-user"></i></div>
+        <div class="rightside-options add-ons" ata-bs-toggle="tooltip" data-bs-placement="bottom" title="Get add-ons"><i class="fa-regular fa-plus"></i></div>
+        <div class="rightside-options hide-panel" ata-bs-toggle="tooltip" data-bs-placement="bottom" title="Hide side panel"><i class="fa-solid fa-chevron-right"></i></div>
+    </div>
+
+
+</div>
+
+</body>
+</html>
